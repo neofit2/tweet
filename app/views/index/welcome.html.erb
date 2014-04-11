@@ -1,0 +1,6 @@
+<h1>Index#welcome</h1>
+
+<%= form_for (@tweet = Tweet.new, :url => user_tweet_path) do |tweet_form| %>
+ <%= tweet_form.text_area :tweet_content, :id => "tweet" %>
+ <%= tweet_form.submit "Tweet" %>
+<% end %>
